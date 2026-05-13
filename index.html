@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Priyanshu Sahoo | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">PS<span class="dot">.</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#objective">Objective</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="dark-toggle" id="darkToggle" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-image-wrap fade-in">
+        <img src="profile.png" alt="Priyanshu Sahoo" class="hero-img"
+          onerror="this.src='https://ui-avatars.com/api/?name=Priyanshu+Sahoo&background=0a1628&color=00d4ff&size=300&bold=true'"/>
+        <div class="img-ring"></div>
+      </div>
+      <div class="hero-text fade-in delay-1">
+        <div class="hero-badge"><span class="badge-dot"></span> Available for Opportunities</div>
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Priyanshu <span class="accent">Sahoo</span></h1>
+        <div class="typewriter-wrap">
+          <span class="typewriter" id="typewriter"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-tagline">Building intelligent, data-driven solutions that transform complex problems into impactful digital experiences.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary"><i class="fas fa-code"></i> View Projects</a>
+          <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Contact Me</a>
+          <a href="#" class="btn btn-ghost" download><i class="fas fa-download"></i> Resume</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint"><span></span></div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Get to Know Me</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <div class="about-card">
+            <h3>Professional Summary</h3>
+            <p>Computer Science graduate (2021–2025) with hands-on experience in data analytics, machine learning, and AI-driven projects. Proficient in Python, SQL, Power BI, and HTML/CSS/JavaScript, with strong skills in building data-driven solutions and interactive applications that transform complex requirements into functional, high-impact digital tools.</p>
+            <div class="about-highlights">
+              <div class="highlight-item"><i class="fas fa-lightbulb"></i><span>Passionate about solving real-world problems using data</span></div>
+              <div class="highlight-item"><i class="fas fa-robot"></i><span>Deep interest in analytics, AI systems, and scalable applications</span></div>
+              <div class="highlight-item"><i class="fas fa-brain"></i><span>Strong problem-solving, analytical thinking &amp; adaptability</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="about-right reveal delay-1">
+          <div class="info-grid">
+            <div class="info-item"><span class="info-label"><i class="fas fa-birthday-cake"></i> Date of Birth</span><span class="info-val">06 July 2003</span></div>
+            <div class="info-item"><span class="info-label"><i class="fas fa-venus-mars"></i> Gender</span><span class="info-val">Male</span></div>
+            <div class="info-item"><span class="info-label"><i class="fas fa-map-marker-alt"></i> Location</span><span class="info-val">Kolkata, India</span></div>
+            <div class="info-item"><span class="info-label"><i class="fas fa-graduation-cap"></i> Degree</span><span class="info-val">B.Tech CSE (2021–2025)</span></div>
+            <div class="info-item full-width"><span class="info-label"><i class="fas fa-language"></i> Languages</span><span class="info-val">English · Hindi · Odia · Bengali</span></div>
+            <div class="info-item full-width"><span class="info-label"><i class="fas fa-briefcase"></i> Status</span><span class="info-val available">&#x2022; Open to Opportunities</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Academic Background</span>
+        <h2 class="section-title">My <span class="accent">Education</span></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"><i class="fas fa-university"></i></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2021 – 2025</span>
+            <h3>B.Tech in Computer Science &amp; Engineering</h3>
+            <p class="timeline-inst"><i class="fas fa-map-marker-alt"></i> Amity University, Kolkata</p>
+            <div class="timeline-score"><i class="fas fa-star"></i> CGPA: <strong>6.68</strong></div>
+          </div>
+        </div>
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-dot"><i class="fas fa-school"></i></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2021</span>
+            <h3>Class XII — CBSE</h3>
+            <p class="timeline-inst"><i class="fas fa-map-marker-alt"></i> Birla Bharti, Kolkata</p>
+            <div class="timeline-score"><i class="fas fa-star"></i> Score: <strong>79.67%</strong></div>
+          </div>
+        </div>
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-dot"><i class="fas fa-book"></i></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2019</span>
+            <h3>Class X — CBSE</h3>
+            <p class="timeline-inst"><i class="fas fa-map-marker-alt"></i> Kendriya Vidyalaya Fort William, Kolkata</p>
+            <div class="timeline-score"><i class="fas fa-star"></i> Score: <strong>70.40%</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS ========== -->
+  <section class="section cert-section" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Credentials</span>
+        <h2 class="section-title">My <span class="accent">Certifications</span></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="cert-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">💻</div>
+          <div class="cert-body">
+            <h3>Operating System</h3>
+            <p class="cert-issuer">Saylor Academy</p>
+          </div>
+          <a href="https://learn.saylor.org/pluginfile.php/1/tool_certificate/issues/1718466744/5254018352PS.pdf" target="_blank" class="btn btn-sm">View Credential <i class="fas fa-external-link-alt"></i></a>
+        </div>
+
+        <div class="cert-card reveal delay-1">
+          <div class="cert-icon">📊</div>
+          <div class="cert-body">
+            <h3>Data Analytics Job Simulation</h3>
+            <p class="cert-issuer">Deloitte Australia · Forage</p>
+          </div>
+          <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_69c75ca7efe028df282c709c_1774679616259_completion_certificate.pdf" target="_blank" class="btn btn-sm">View Credential <i class="fas fa-external-link-alt"></i></a>
+        </div>
+
+        <div class="cert-card reveal delay-2">
+          <div class="cert-icon">🐍</div>
+          <div class="cert-body">
+            <h3>Python for Data Science</h3>
+            <p class="cert-issuer">IBM · Cognitive Class</p>
+          </div>
+          <a href="https://courses.cognitiveclass.ai/certificates/835b70ad4bc94c7f854f8eea502a6e58" target="_blank" class="btn btn-sm">View Credential <i class="fas fa-external-link-alt"></i></a>
+        </div>
+
+        <div class="cert-card reveal delay-1">
+          <div class="cert-icon">🤖</div>
+          <div class="cert-body">
+            <h3>Data Science &amp; AI (Dual)</h3>
+            <p class="cert-issuer">Boston Institute of Analytics</p>
+            <div class="dual-links">
+              <a href="https://bia.bostoninstituteofanalytics.org/bia-certification/QklBXzEzMDIxX0JJQQ==DATA%20SCIENCE" target="_blank" class="dual-link">📈 Data Science</a>
+              <a href="https://bia.bostoninstituteofanalytics.org/bia-certification/QklBXzEzMDIyX0JJQQ==ARTIFICIAL%20INTELLIGENCE" target="_blank" class="dual-link">🤖 AI</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card reveal delay-2">
+          <div class="cert-icon">🧠</div>
+          <div class="cert-body">
+            <h3>Machine Learning Using Python</h3>
+            <p class="cert-issuer">Infosys Springboard</p>
+          </div>
+          <a href="https://021821ce-9f2a-40c7-b7fe-f84b5c5b3251.tiiny.site/" target="_blank" class="btn btn-sm">View Credential <i class="fas fa-external-link-alt"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Technical Expertise</span>
+        <h2 class="section-title">My <span class="accent">Skills</span></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-cat reveal">
+          <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+          <h3>Programming</h3>
+          <div class="skill-tags">
+            <span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-Learn</span>
+            <span>Matplotlib</span><span>Seaborn</span><span>SQL</span>
+          </div>
+        </div>
+        <div class="skill-cat reveal delay-1">
+          <div class="skill-cat-icon"><i class="fas fa-brain"></i></div>
+          <h3>Data &amp; AI</h3>
+          <div class="skill-tags">
+            <span>Data Analysis</span><span>Machine Learning</span><span>Artificial Intelligence</span>
+            <span>EDA</span><span>Feature Engineering</span>
+          </div>
+        </div>
+        <div class="skill-cat reveal delay-2">
+          <div class="skill-cat-icon"><i class="fas fa-chart-bar"></i></div>
+          <h3>Analytics</h3>
+          <div class="skill-tags">
+            <span>Power BI</span><span>Excel</span><span>Pivot Tables</span>
+            <span>Data Storytelling</span><span>Visualization</span>
+          </div>
+        </div>
+        <div class="skill-cat reveal delay-1">
+          <div class="skill-cat-icon"><i class="fas fa-database"></i></div>
+          <h3>Databases</h3>
+          <div class="skill-tags">
+            <span>MySQL</span><span>PostgreSQL</span><span>Oracle 10g</span><span>Oracle 11g</span>
+          </div>
+        </div>
+        <div class="skill-cat reveal delay-2">
+          <div class="skill-cat-icon"><i class="fas fa-globe"></i></div>
+          <h3>Web &amp; Tools</h3>
+          <div class="skill-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <span>Tkinter</span><span>Streamlit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section class="section exp-section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Work History</span>
+        <h2 class="section-title">My <span class="accent">Experience</span></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="exp-grid">
+
+        <div class="exp-card reveal">
+          <div class="exp-header">
+            <div class="exp-logo">T</div>
+            <div class="exp-header-text">
+              <h3>Thiranex</h3>
+              <span class="exp-role">Data Science Intern</span>
+              <span class="exp-date">2026</span>
+            </div>
+          </div>
+          <h4 class="exp-project">Customer Segmentation Using K-Means Clustering</h4>
+          <ul class="exp-desc">
+            <li>Segmented 200 mall customers into 5 behavioral groups (Target, Sensible, Careful, Standard, Careless) using K-Means Clustering (k=5, Elbow Method) on Annual Income and Spending Score.</li>
+            <li>Built end-to-end ML pipeline with EDA, StandardScaler, WCSS optimization, and Joblib serialization — analyzed spending behavior per segment to deliver targeted marketing insights via an interactive web application.</li>
+          </ul>
+          <div class="exp-footer">
+            <span class="exp-tool"><i class="fas fa-code"></i> VS Code</span>
+            <a href="https://github.com/priyanshu2003719/Customer-Segmentation-Analysis" target="_blank" class="btn btn-sm"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <div class="exp-card reveal delay-1">
+          <div class="exp-header">
+            <div class="exp-logo">B</div>
+            <div class="exp-header-text">
+              <h3>BIA — Boston Institute of Analytics</h3>
+              <span class="exp-role">Data Science &amp; AI Intern</span>
+              <span class="exp-date">2025 – 2026</span>
+            </div>
+          </div>
+          <h4 class="exp-project">Employee Retention Prediction</h4>
+          <ul class="exp-desc">
+            <li>Built an ML model using Logistic Regression, Random Forest, and XGBoost on 19K+ records to predict employee attrition.</li>
+            <li>Performed EDA, feature engineering, and applied SMOTE — achieved ROC-AUC of 0.81 with strong recall for at-risk employees.</li>
+          </ul>
+          <div class="exp-tags"><span>Logistic Regression</span><span>Random Forest</span><span>XGBoost</span><span>LightGBM</span></div>
+          <div class="exp-footer">
+            <span class="exp-tool"><i class="fas fa-code"></i> Google Colab</span>
+            <a href="https://github.com/priyanshu2003719/Employee-Retention-analysis" target="_blank" class="btn btn-sm"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <div class="exp-card reveal delay-2">
+          <div class="exp-header">
+            <div class="exp-logo">SE</div>
+            <div class="exp-header-text">
+              <h3>South Eastern Railway</h3>
+              <span class="exp-role">Software Development Intern</span>
+              <span class="exp-date">2024</span>
+            </div>
+          </div>
+          <h4 class="exp-project">Employee Salary Management System</h4>
+          <ul class="exp-desc">
+            <li>Developed a web-based payroll system using ASP.NET, VB.NET, and Oracle 11g, automating pay slip generation to significantly reduce manual processing time and improve operational efficiency.</li>
+            <li>Implemented secure authentication and automated calculation logic, eliminating manual entry errors and streamlining data management for a large-scale employee database.</li>
+          </ul>
+          <div class="exp-footer">
+            <span class="exp-tool"><i class="fas fa-code"></i> VS Code</span>
+            <a href="https://github.com/priyanshu2003719/Employee-Salary-Management-System" target="_blank" class="btn btn-sm"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">My Work</span>
+        <h2 class="section-title">My <span class="accent">Projects</span></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="proj-tabs">
+        <button class="proj-tab active" data-filter="all">All</button>
+        <button class="proj-tab" data-filter="powerbi">Power BI</button>
+        <button class="proj-tab" data-filter="data">Data Analysis</button>
+        <button class="proj-tab" data-filter="database">Database</button>
+        <button class="proj-tab" data-filter="web">Web Dev</button>
+        <button class="proj-tab" data-filter="python">Python</button>
+      </div>
+
+      <div class="proj-grid" id="projectGrid">
+
+        <!-- POWER BI -->
+        <div class="proj-card" data-cat="powerbi">
+          <div class="proj-cat-badge">Power BI</div>
+          <h3>Health Dashboard</h3>
+          <p>Developed interactive health dashboards featuring 3D organ models, regional epidemiology maps, and cohort demographic filters to track clinical risk factors </p>
+          <div class="proj-datasets">
+            <span class="ds-label">Datasets:</span>
+            <a href="https://drive.google.com/drive/folders/1uczoAxKsy3D2M6fB_3Sl4NjJOQDZGJ9O" target="_blank">Smoke Risk</a>
+            <a href="https://drive.google.com/drive/folders/1NjG3XO59uUGfdjkXTkoCbhbnG7Kp84ga" target="_blank">STD Health</a>
+          </div>
+          <div class="proj-tech"><span>Excel</span><span>Power BI</span></div>
+          <div class="proj-links">
+            <a href="https://github.com/priyanshu2003719/Health-Dashboard-" target="_blank" class="btn btn-sm mt"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <div class="proj-card" data-cat="powerbi">
+          <div class="proj-cat-badge">Power BI</div>
+          <h3>Spotify Music Analysis</h3>
+          <p>Developed interactive Power BI dashboard analyzing viral Spotify streaming trends.</p>
+          <div class="proj-datasets">
+            <span class="ds-label">Dataset:</span>
+            <a href="https://docs.google.com/spreadsheets/d/11eiH_HurRXnbymNc4pskPdKhnCtC79Tg/edit?gid=183885892#gid=183885892" target="_blank">Spotify All Datasets</a>
+          </div>
+          <div class="proj-tech"><span>Excel</span><span>Power BI</span></div>
+          <div class="proj-links">
+            <a href="https://github.com/priyanshu2003719/Spotify-Dashboard" target="_blank" class="btn btn-sm mt"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <!-- DATA ANALYSIS -->
+        <div class="proj-card" data-cat="data">
+          <div class="proj-cat-badge">Data Analysis</div>
+          <h3>Coffee Shop Sales Analysis</h3>
+          <p>Analyzed 9,971 transactions across 5 cities using Excel Pivot Tables and an interactive dashboard to track $46K revenue, 35% profit margin, and identify top markets and categories.</p>
+          <div class="proj-datasets">
+            <span class="ds-label">Dataset:</span>
+            <a href="https://github.com/priyanshu2003719/COFFEE-SHOP-SALES-DASHBOARD/blob/main/Coffee%20Shop%20Sales%20Data...xlsx" target="_blank">Coffee Shop Sales Data</a>
+          </div>
+          <div class="proj-tech"><span>Excel</span><span>Pivot Tables</span></div>
+          <div class="proj-links">
+            <a href="https://github.com/priyanshu2003719/COFFEE-SHOP-SALES-DASHBOARD" target="_blank" class="btn btn-sm mt"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <div class="proj-card" data-cat="data">
+          <div class="proj-cat-badge">Data Analysis</div>
+          <h3>Stock Analysis &amp; Prediction</h3>
+          <p>Built Streamlit app using Python, ARIMA, CAPM for stock forecasting and risk analysis.</p>
+          <div class="proj-tech"><span>Python</span><span>ARIMA</span><span>CAPM</span><span>Streamlit</span></div>
+          <div class="proj-links">
+            <a href="https://github.com/priyanshu2003719/Stock-Analysis-Prediction" target="_blank" class="btn btn-sm mt"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <!-- DATABASE -->
+        <div class="proj-card" data-cat="database">
+          <div class="proj-cat-badge">Database</div>
+          <h3>Zepto E-Commerce Inventory Analysis</h3>
+          <p>Analyzed real-world quick-commerce data using SQL to optimize inventory, clean pricing inconsistencies, and deliver actionable business insights.</p>
+          <div class="proj-datasets">
+            <span class="ds-label">Dataset:</span>
+            <a href="https://www.kaggle.com/datasets/palvinder2006/zepto-inventory-dataset/data?select=zepto_v2.csv" target="_blank">zepto_v2.csv (Kaggle)</a>
+          </div>
+          <div class="proj-tech"><span>PostgreSQL</span><span>pgAdmin 4</span></div>
+          <div class="proj-links">
+            <a href="https://github.com/priyanshu2003719/zepto-SQL-data-analysis" target="_blank" class="btn btn-sm mt"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <!-- WEB DEV -->
+        <div class="proj-card" data-cat="web">
+          <div class="proj-cat-badge">Web Dev</div>
+          <h3>ARIA — AI Chatbot</h3>
+          <p>Developed ARIA: Multi-modal AI assistant with memory, research, and automation powered by Gemini API.</p>
+          <div class="proj-tech"><span>Gemini API</span><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <div class="proj-links">
+            <a href="https://github.com/priyanshu2003719/AI-CHATBOT" target="_blank" class="btn btn-sm mt"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <div class="proj-card" data-cat="web">
+          <div class="proj-cat-badge">Web Dev</div>
+          <h3>Nimbus — Weather Intelligence</h3>
+          <p>AI-powered weather dashboard with real-time insights and forecasts.</p>
+          <div class="proj-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="proj-links">
+            <a href="https://github.com/priyanshu2003719/WEATHER-WEBSITE" target="_blank" class="btn btn-sm mt"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <div class="proj-card" data-cat="web">
+          <div class="proj-cat-badge">Web Dev</div>
+          <h3>🍛 Savoria — Fine Dining Website</h3>
+          <p>Built a fine dining restaurant website with dynamic menu, cart system, and email integration.</p>
+          <div class="proj-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="proj-links">
+            <a href="https://priyanshu2003719.github.io/Food-Website/" target="_blank" class="btn btn-sm mt"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          </div>
+        </div>
+
+        <!-- PYTHON -->
+        <div class="proj-card" data-cat="python">
+          <div class="proj-cat-badge">Python</div>
+          <h3>Student Result Management System</h3>
+          <p>Developed a desktop CRUD application with Tkinter GUI and MySQL backend to manage student records, results, and academic performance efficiently.</p>
+          <div class="proj-tech"><span>Python</span><span>MySQL</span><span>Tkinter</span></div>
+          <div class="proj-links">
+            <a href="https://github.com/priyanshu2003719/Student-Result-Management-System" target="_blank" class="btn btn-sm mt"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+    
+
+      </div>
+
+      <!-- Add Project Button -->
+      <div class="add-proj-wrap">
+        <button class="btn btn-outline" id="addProjBtn"><i class="fas fa-plus"></i> Add Project</button>
+      </div>
+
+      <!-- Add Project Modal -->
+      <div class="modal-overlay" id="addProjModal">
+        <div class="modal">
+          <div class="modal-header">
+            <h3>Add New Project</h3>
+            <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label>Project Name *</label>
+              <input type="text" id="newProjName" placeholder="e.g. Sentiment Analysis Dashboard"/>
+            </div>
+            <div class="form-group">
+              <label>Category *</label>
+              <select id="newProjCat">
+                <option value="powerbi">Power BI</option>
+                <option value="data">Data Analysis</option>
+                <option value="database">Database</option>
+                <option value="web">Web Dev</option>
+                <option value="python">Python</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Project Description *</label>
+              <textarea id="newProjDesc" placeholder="Describe your project..."></textarea>
+            </div>
+            <div class="form-group">
+              <label>Dataset Names (optional)</label>
+              <input type="text" id="newProjDataset" placeholder="e.g. sales_data.csv, customers.xlsx"/>
+            </div>
+            <div class="form-group">
+              <label>Dataset Link (optional)</label>
+              <input type="text" id="newProjDatasetLink" placeholder="https://..."/>
+            </div>
+            <div class="form-group">
+              <label>GitHub / Project Link (optional)</label>
+              <input type="text" id="newProjLink" placeholder="https://github.com/..."/>
+            </div>
+            <div class="form-group">
+              <label>Done On (Tool/IDE)</label>
+              <input type="text" id="newProjTool" placeholder="e.g. VS Code, Google Colab"/>
+            </div>
+            <div class="form-group">
+              <label>Tech Stack (comma separated)</label>
+              <input type="text" id="newProjTech" placeholder="e.g. Python, Pandas, Streamlit"/>
+            </div>
+            <button class="btn btn-primary" id="submitProj">Add Project</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CAREER OBJECTIVE ========== -->
+  <section class="section objective-section" id="objective">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What I'm Looking For</span>
+        <h2 class="section-title">Career <span class="accent">Objective</span></h2>
+        <div class="title-line"></div>
+      </div>
+      <p class="objective-statement reveal">"Actively seeking opportunities to apply analytical and technical skills in real-world environments, contributing to data-driven decision making and intelligent system development."</p>
+      <div class="roles-grid">
+        <div class="role-card reveal"><i class="fas fa-chart-line"></i><span>Data Analyst</span></div>
+        <div class="role-card reveal delay-1"><i class="fab fa-python"></i><span>Python Developer</span></div>
+        <div class="role-card reveal delay-2"><i class="fas fa-robot"></i><span>AI &amp; ML Engineer</span></div>
+        <div class="role-card reveal delay-1"><i class="fas fa-globe"></i><span>Web Developer</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Let's Connect</span>
+        <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div><p class="c-label">Phone</p><a href="tel:+919330666642">+91 9330666642</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div><p class="c-label">Email</p><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">sahoopriyanshu889@gmail.com</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div><p class="c-label">Location</p><span>Kolkata, India · Open to Remote, Relocation &amp; On-site</span></div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/priyanshu-sahoo-19b697348/" target="_blank" class="social-btn linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/priyanshu2003719" target="_blank" class="social-btn github" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="social-btn gmail" title="Gmail"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal delay-1">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required/>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required/>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width"><i class="fas fa-paper-plane"></i> Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Designed &amp; Built by <span class="accent">Priyanshu Sahoo</span> &middot; 2025</p>
+      <p class="footer-sub">B.Tech CSE &middot; Amity University, Kolkata</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-top" id="backTop" title="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="Script.js"></script>
+</body>
+</html>
